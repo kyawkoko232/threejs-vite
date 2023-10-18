@@ -1,19 +1,21 @@
-*
-{
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html,
-body
-{
-    overflow: hidden;
-}
+@layer components {
+    .btn{
+        @apply inline-block px-6 py-2.5 rounded shadow-lg }
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
+    .btn-primary{
+        @apply 
+        bg-blue-600
+        text-white  text-sm 
+        leading-tight  
+        hover:bg-purple-700 hover:shadow-lg
+        focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0 
+        active:bg-purple-800 active:shadow-lg 
+        transition duration-150 ease-in-out
+    }
 }
